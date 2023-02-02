@@ -1,0 +1,195 @@
+#3 numbers as input find the greatest number among them
+a,b,c=int(input(),int(input(),int(input()
+if a>b and a>c:
+    print(" a is the greatest number")
+elif b>a and b>c:
+    print("b is greatest number")
+elif c>a and c>b:
+    print("c is greatest number")
+else:
+    print("the condition is not satisfied")
+
+
+
+#the given number is 500 or not
+num=int(input())
+if num==500:
+    print("the number is 500")
+else:
+    print("the number is not 500")
+
+
+
+#bigger number between 2 numbers
+a,b=int(input()),int(input())
+if a>b:
+    print("a is greater than b")
+else:
+    print("b is greater than a")
+
+
+
+#get any 2 num as input both num should be less than or equal to 15 perform bitwise and,or,xor
+a,b=int(input()),int(input())
+if a<=15 and b<=15:
+     print("bitwise and a&b:",a&b)
+     print("bitwise or a|b", a|b)
+     print("bitwise xor a^b", a^b)
+else:
+    a,b=int(input("range should be less than 15 so give the input again"))
+
+
+
+#check given number is divisible by 2 and 5
+num=int(input())
+if num%2==0 and num%5==0:
+    print("The given number is divisible by 2 and 5")
+else:
+    print("The given number is not divisible by 2 and 5")
+
+
+
+#number divisible by 11 or not
+num=int(input())
+if num%11==0:
+    print("Divisible by 11")
+else:
+    print("Not divisible by 11")
+
+
+
+print("it's",'a','good','day',end=' ')
+print('all','is','good',sep='#',end=',')
+print("sweet")
+
+
+#find postive or negative even and odd number
+a=int(input())
+if a%2==0:
+    if a>0:
+        print("the number is positive and even")
+    else:
+        print("The number is even and negative")
+else:
+    if a>0:
+        print("The number is positive and odd")
+    else:
+        print("The number is negative and odd")
+
+
+
+
+#for loop printing all integers
+n=10
+print("Intergers upto 10")
+for i in range(1,n+1):
+    print(i)
+
+
+#for loop even numbers
+n=10
+print("Integers upto 10 even")
+for i in range(1,n+1):
+    print(i)
+    i=i+2
+
+
+
+#guess the number 
+import random
+n=random.randrange(1,50)
+guess=int(input("Enter the number:"))
+while n!=guess:
+    if guess>n:
+        print("Too high!!")
+        guess=int(input("Enter the number"))
+    elif guess<n:
+        print("Too low")
+        guess=int(input("Enter the number"))
+    else:
+        break
+print("you guessed it right")
+
+
+
+#hallow heart
+print("  #   # ")
+print(" #  #  #")
+print(" #     #")
+print("  #   #")
+print("    #    ")
+
+
+#temp as input display it is hot:40-45,hottest>45,warm,moderate:25-40,cold:10-25,chill<10
+temp=int(input())
+if temp>45:
+    print("hottest")
+elif temp>40 and temp<45:
+    print("hot")
+elif temp>25 and temp<45:
+    print("moderate")
+elif temp>10 and temp<25:
+    print("cold")
+else:
+    print("chill")
+
+
+#multiple inputs using list and map
+n=int(input("size"))
+a=list(map(int,input().strip().split(" ")))
+print(a)
+
+
+#nested if
+t=50
+if t>26:
+    if==50:
+        print("yes")
+    else:
+        print("not 50")
+else:
+    print("not > 26")
+
+
+#find product of 10 integer numbers
+a=list(map(int,input().strip().split(" ")))
+for i in range(1,10):
+    a=a*i
+    i -=a
+    print(i)
+
+
+#upside down filled triangle
+print("# # #")
+print(" # # ")
+print("  #  ")
+
+#using while loop print all even numbers between 2 and 20
+i=2
+while i<=20:
+    print(i)
+    i+=2
+
+
+#whle loop odd numb upto 30
+i=1
+while i<=30:
+    print(i)
+    i=i+2
+
+
+#n integers using while loop
+i=1
+while i<=10:
+    print(i)
+    i=i+1
+
+
+
+
+
+
+
+
+
+
