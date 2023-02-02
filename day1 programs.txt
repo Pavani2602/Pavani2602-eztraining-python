@@ -1,0 +1,75 @@
+num=36.32*(3)
+total=num+56.19
+final=total-10
+print(final)
+
+num1=int(input("Enter the positive number"))
+num2=float(input("Emter the negative float number:"))
+print("Result:",num1*num2)
+
+
+#75kg kumar bought and gave half to sam now sam gives half of it to kumar.candies kumar is having
+kumar=75
+sam=(kumar/2)
+kumar=75-sam
+kumar=kumar+(sam/2)
+print(kumar)
+print(sam/2)
+
+#multiple inputs in a single line
+a,b=int(input()),int(input())
+print(a)
+print(b)
+
+#split can be done only for strings if we want integers then do type conversion
+#multiple inputs using splits
+a,b=input("Enter").split(" ")
+print(a)
+print(type(a))
+print(int(a)+int(b))
+
+
+
+#take 3int nos 3 float num and 2 strings amd one complex as input and print the same on the screen (use formatted output)
+int1=int(input("Enter the first integer:"))
+int2=int(input("Enter the second integer:"))
+int3=int(input("Enter the third integer:"))
+
+float1=float(input("Enter the first float:"))
+float2=float(input("Enter the second float:"))
+float3=float(input("Enter the third float:"))
+
+str1=input("Enter the first string")
+str2=input("Enter the second string")
+
+com1=complex(input("Enter the complex:"))
+
+print("first integer:",int1)
+print("second integer:",int2)
+print("third integer:",int3)
+
+print("First float:",float1)
+print("second float:",float2)
+print("Third float:",float3)
+
+print("First string:",str1)
+print("Second string:",str2)
+
+print("complex number",com1)
+
+
+
+
+#swap two numbers with temp value
+a,b=int(input("a:")),int(input("b:"))
+print(a,b)
+temp=a
+a=b
+b=temp
+print(a,b)
+
+#swap without temp
+a,b=int(input("a:")),int(input("b:"))
+print(a,b)
+a,b=b,a
+print(a,b)
