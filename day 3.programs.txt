@@ -1,0 +1,83 @@
+#create a list with 6 elements extract only even numbers &print
+size=int(input("size: "))
+l=[]
+for i in range (size):
+    ele=int(input("element:"))
+    l.append(ele)
+print(l)
+for j in l:
+    if(j%2==0):
+print(j)
+
+
+
+#get the list of numbers as input return their product if the value is less than 750 else return the sum
+l=list(map(int,input("enter").split(" ")))
+print(l)
+x=2
+y=4
+
+for i in l:
+    x=x*1
+    y=y+1
+if x<=750:
+    print("product",x)
+else:
+    print("sum",y)
+
+
+#print elements
+numbers=[elements for elements in "Great Afternoon"]
+print(numbers)
+
+# can create list using existing list
+l=["hyd","vizag","chennai","vijayawada"]
+city=[]
+for n in l:
+    if "v" in n:
+        city.append(n)
+print (city)
+l1=[2**x for x in range (2,10)]
+print (l1)
+
+l2=[a for a in range(200,300,400)]
+print(l2)
+
+l3=[5,6,7,8,9]
+l4=[i for i in l3 if (i<5)]
+print(l4)
+
+#tuple and dict
+t=(1,2,23,4,"pavani")
+print (type(t))
+print(t.count(3))
+print(t.index(4))
+
+
+#dictionary
+d={1:"one",2:"two"}
+print(type (d))
+print(d.keys())
+print(d.values())
+print(d.items())
+print("dictionary with keys as of list with index")
+print(d["one"])
+print(d.get("one"))
+
+#union
+set1={1,2,3,4,5}
+set2={4,5,6,7}
+set1.add(8)
+print(set1)
+set1.union(set2)
+print (set2)
+set1.intersection (set2)
+print (set1)
+set2-set1
+print (set2)
+print("symmetric difference:",set1^set2)
+set1.update([77,87])
+
+ 
+
+
