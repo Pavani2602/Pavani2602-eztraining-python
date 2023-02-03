@@ -1,0 +1,181 @@
+#list comprehension
+d={n:n*n for n in range(1,5)}
+print(d)
+
+#calculating the price of the product
+print("claculating a new dict from old dict here")
+old={'rice':60,'beans':40,'oil':80}
+new={product:price*5 for (product,price)in old.items()}
+print(new)
+
+#with checks
+print("this program is with conditions")
+real={'gangs':21,'sri':20,'pavs':20,'vinay':21}
+now={name:age for (name,age)in real.items() if age>20}
+print(new)
+
+
+#create a list with 8 customer names display a dictionarywhich has customers names along with discounts for them from a particular shop
+#random.randint()
+import random
+li=list(map(str,input().split(" ")))
+x=len(li)
+for x in range(1,9):
+    print(li)
+dict={names:random.randint(1,20) for names in li}
+print(dict)
+
+
+
+#dict using list comp
+#sample program
+l1=['a','b','c']
+l2=[1,2,3]
+d={a:b for (a,b) in zip(l1,l2)}
+print(d)
+
+
+
+#create 2 list first should have 5 stu 2nd list comtain total marks range 1 to 500 create a dict marks as percentage   value and names askeys
+import random
+stu=list(map(str,input("Enter students names")))
+marks=[]
+for i in range(len(stu)):
+    x=(random.randint(300,500)/500)*100
+    marks.append(x)
+dict={names:percent for (names,percent) in zip(stu,marks)}
+print(dict)
+
+
+
+
+#by using backslash
+n='hi i\'m sridevi'
+print(n)
+
+
+
+#by using backslash
+n='hi i\'m sridevi'
+print(n)
+
+#string functions
+s="Hi,i'm Sridevi"
+s
+"Hi,i'm Sridevi"
+s.upper()
+"HI,I'M SRIDEVI"
+s.lower()
+"hi,i'm sridevi"
+s.capitalize()
+"Hi,i'm sridevi"
+s.replace('hi','hello')
+"Hi,i'm Sridevi"
+s.replace('h','a')
+"Hi,i'm Sridevi"
+s.replace("hi","hello")
+"Hi,i'm Sridevi"
+s.strip()
+"Hi,i'm Sridevi"
+s.split(" ")
+["Hi,i'm", 'Sridevi']
+s.center(3,'*')
+"Hi,i'm Sridevi"
+s.center(width,fillchar)
+s.count('i')
+4
+s.count('i',3,len(s))
+3
+s.endswith('a',0,len(s))
+False
+s="Hi,I'm Sridevi"
+s
+"Hi,I'm Sridevi"
+s.islower()
+False
+s.isupper()
+False
+s.istitle()
+False
+max(s)
+'v'
+min(s)
+' '
+s.startswith('hello',0,len(s))
+False
+s.startswith('Hi',0,len(s))
+True
+s.rfind('a',0,len(s))
+-1
+s.find('a',0,len(s))
+-1
+
+
+
+'''get 1str as input along with a character finf out and 
+display whether char present in str or nor'''
+str=input("Enter the string:")
+char=input("Enter the char")
+if char in str:
+    print("The given character is present in the string")
+else:
+    print("The given character is present in the string")
+
+
+
+#check whether the given string is palindrome or not
+x = "malayalam"
+w = ""
+for i in x:
+    w = i + w
+if (x == w):
+    print("Yes")
+else:
+    print("No")
+
+
+import math
+print("ceil 12.5:",math.ceil(12.5))
+print("floor 12.5",math.floor(12.5))
+print("sqrt 345:",math.sqrt(345))
+print("factoral 3:",math.factorial(5))
+print("power 2,3:",math.pow(2,3))
+print("remainder 10,3:",math.fmod(10,3))
+
+
+print("This is not a math module but a simple function")
+a,b=divmod(a,b)
+print(a,b)
+
+
+
+'''create a list with vowel get 1 str 
+as input count vowels from str and dispplay'''
+li=list(map(str,input("enter vowels")))
+print(li)
+str=input("enter string")
+i=0
+a=0
+for i in str:
+    if i in li:
+        a=a+1
+        print(li)
+print(a)
+       
+
+
+
+#aftr getting 1 str as input check ur str contains space
+#or not if yes cosunt no. of spaces and print it
+str=input()
+x=0
+for i in str:
+    if i==" ":
+        x=x+1
+print(x)
+
+
+
+
+
+
