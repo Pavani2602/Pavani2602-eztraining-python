@@ -1,0 +1,124 @@
+#crate a list and display the elements
+li=["sri",2,66,6.3,88,4,7,9,2]
+print("using length metho")
+for i in range(len(li)):
+    print(li[i])
+
+
+#using membership operator
+list=["sri",2,66,6.3,88,7,3,89,"sfsd"]
+print("using membership operators")
+for i in list:
+    print(i)
+
+
+
+#get the list from input after creating a list with 6 elements from the user extract only even numbers and print
+num=int(input("size:"))
+l=[]
+for i in range(num):
+    ele=int(input("element:"))
+    l.append(ele)
+print(l)
+for j in l:
+    if(j%2==0):
+        print(j)
+
+
+
+#create a list with 5 float numbers and find sum and average
+list=[2.2,3.3,4.4,5.5,6.6]
+sum=0
+for i in range(0,len(list)):
+    sum=sum+list[i]
+    print(sum)
+    #print("average is:",sum/2)
+
+
+
+#get the list of numbers as input return their product if the value is less
+#than 750 else return the sum
+#size=int(input("range:"))
+l=list(map(int,input().split(" ")))
+print(l)
+pro=1
+add=0
+for i in l:
+    pro*=i
+    add+=i
+    if pro<=750:
+        print(pro)
+    else:
+        print(add)
+
+
+
+#list comprehension
+numbers=[elements for elements in "good afternoon"]
+print(numbers)
+
+#creating a list using existing list
+li=["hyd","vizag","chennai","indore"]
+city=["hyd"]
+for li in city:
+    if "v" in li:
+        city.append(li)
+print("city:",city)
+
+print("l1")
+l1=[2**x for x in range(2,10)]
+print(l1)
+
+print("l2")
+l2=[a for a in range(100,140,10)]
+print(l2)
+
+print("list numbers from a list")
+l3=[1,2,3,4,5,8]
+l4=[i for i in l3 if(i<5)]
+print(l4)
+
+
+
+set1={1,2,3,4,5}
+set2={2,4,6,8}
+set1.add(8)
+print(set1)
+set1.union(set2)
+print("union",set2)
+set1.intersection(set2)
+print("intersectio:",set1)
+set2-set1
+print("difference:",set2)
+print("symmetric difference:",set1^set2)
+set1.update([44,32])
+print("update:",set1)
+
+
+
+t=(1,2.2,3,3,4,"sri")
+print(type(t))
+print(t.count(3))
+print(t.index(4))
+
+
+t=(1,2.2,3,3,4,"sri")
+print(type(t))
+print(t.count(3))
+print(t.index(4))
+
+
+#dictionary
+d={1:"one",2:"two"}
+print(type(d))
+print(d.keys())
+print(d.values())
+print(d.items())
+print("dictionary is with keys as of list with index")
+print(d['one'])
+print(d.get('one'))
+
+
+
+
+
