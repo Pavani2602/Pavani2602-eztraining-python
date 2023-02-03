@@ -1,0 +1,77 @@
+list slicing:
+l=[1,2,3.4,"sri"]
+l
+[1, 2, 3.4, 'sri']
+l[3]
+'sri'
+#range will be upto n+1 means upto n only the range willl be given
+l[2:3]
+[3.4]
+l[2:4]
+[3.4, 'sri']
+l[0:]
+[1, 2, 3.4, 'sri']
+l[:2]
+[1, 2]
+l[:3]
+[1, 2, 3.4]
+l[-1]
+'sri'
+#reverse the string
+l[::-1]
+['sri', 3.4, 2, 1]
+
+append()-adds ele end of list
+extend()-adds list to another list of ele
+insert()-insert at the defined index--insert(1,22)1-index
+remove()-remove an item from list
+pop()-reoves and returns ele from index
+clear()-remove all items
+index()-index of first matched item
+count()-no. of items
+sort()-ascending order
+reverse()-reverse the ele of list
+copy()-returns the shalloow copy of the list
+l
+[1, 6, 4, 6.6, 'sri']
+l.append(4)
+l
+[1, 6, 4, 6.6, 'sri', 4]
+l.extend([2,8,4])
+l
+[1, 6, 4, 6.6, 'sri', 4, 2, 8, 4]
+l.remove('sri')
+l
+[1, 6, 4, 6.6, 4, 2, 8, 4]
+l.index(4)
+2
+l.sort()
+l
+[1, 2, 4, 4, 4, 6, 6.6, 8]
+l.count(4)
+3
+l.clear()
+l
+[]
+l.insert(2,5)
+l
+[5]
+l.reverse()
+l
+[5]
+l.extend([2,3,6,7])
+l
+[5, 2, 3, 6, 7]
+l.insert(3,5)
+l
+[5, 2, 3, 5, 6, 7]
+l.pop(4)
+6
+
+--list comprehension
+--tuple:
+ordered,normal open brackets
+two functions count and index
+
+--dictionary contains elements with 2 units keys and values
+--keys must be unique
