@@ -1,0 +1,35 @@
+string operations:
+1*3concatenation:s1+s2
+repitition:s1*3
+
+string functions:
+s.lower(): covert all the alphabets to lowercase
+s.upper():convert into uppercase
+s.capitalize():it capitalize the first character of a string
+s.replace(a,b):here the char will be replaced
+s.strip():removes the white spaces
+s.split():it splits the string or senetence acc to  the condition
+s.center(width,fillchar):It will fix the total length and then fix the string in centre
+other empty spaces with fillchar
+s.count(char):It counts the freq of char
+s.count(char,5,len(s)):beginning with 5 it counts the freq of char
+s.endswith():checks whether the given str ends with given char
+s.find('char',0,len(s)):check whether it present or not
+then returns the value of first occurenece
+s.index('char',3,len(s)):it checks the given char from 3
+and return the index value of first occurence value of the given char
+
+
+
+immutable:
+int, float, tuple,bool,string
+here the id number will be changed even thought the value of the variable 
+keep updating
+mutable:
+set,dictionary,list
+here the id value will be overwritten every tym
+ the variable value gets updated
+
+
+
+
