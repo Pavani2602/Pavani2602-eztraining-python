@@ -1,0 +1,17 @@
+When there is exception the developer does not want interruption
+or disturbance in the program flow to achieve this we are using exception handling
+OOPS:
+its an efficient concept used in all object oreinted programming labguages like java and 
+python.
+For multiple reasons we use oops concept for example,:code reusability,
+data security,hiding data
+class:
+Its a blueprint....... example:birds,laptops
+object:
+Its a thing crated based on class
+Note:1 class can have multiple objects
+ex1:
+class is birds.............obj are parrot,peackock
+class is laptops........obj are dell,apple,macboook
+
+        
