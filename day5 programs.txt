@@ -1,0 +1,185 @@
+#random module
+import random as r
+x="you can do it"
+print(r.sample(x,2))
+
+#everytime it gives diff output
+
+a=[1,2,3,4,5,6]
+r.shuffle(a)
+print("shuffle:",a)
+
+a=[1,2,3,4,5,6]
+print(r.choice(a))
+
+b="morning motivation"
+print(r.choice(b))
+
+a=r.random()
+
+_________________________________________
+
+#gives all the functions in the specified modules
+z=dir(r)
+print(z)
+
+
+import calendar
+print("full calendar")
+print(calendar.calendar(2023))
+
+print("particular month")
+print(calendar.month(2023,8))
+
+print("set the first day of the week")
+print(calendar.setfirstweekday(calendar.SATURDAY))
+print(calendar.month(2023,2))
+
+________________________________________
+#datetime module
+
+import datetime
+a=datetime.datetime.now()
+print(a)
+
+sv=a.strftime("%y")#lowercase
+fv=a.strftime("%Y")#uppercase
+print("year short version",sv)
+print("year full versio",fv)
+
+__________________________________________
+
+
+#sample program for no argument and no return value:
+def sample():  #fun definition or desription
+       print("happpy day")
+       print("today")
+sample()#function call
+print("great day")
+sample()
+
+_____________________________________________
+
+#multiplying 3 numbers for no arg and no retun
+def mul():
+    x1=int(input("number"))
+    x2=int(input("number"))
+    x3=int(input("number"))
+    prod=x1*x2*x3
+    print(prod)
+mul()
+
+_________________________________________________
+
+#without argument and with return value
+def mul():
+    x1=int(input("number"))
+    x2=int(input("number"))
+    x3=int(input("number"))
+    prod=x1*x2*x3
+    return prod
+res=mul()
+print(res)
+
+
+#same prgrm with user input
+def mul(x1,x2,x3):
+    prod=x1*x2*x3#variable can be same or diff
+    print(prod)
+x1=int(input("number1"))
+x2=int(input("number2"))
+x3=int(input("number3"))
+mul(x1,x2,x3)
+
+_______________________________________________
+
+
+#lemons functions typ1
+def lemons():
+    lemons=int(input("Enter number of lemons in ur hand"))
+    reqprod=3*lemons
+    print(reqprod)
+    prod=9
+    if reqprod<prod:
+        print("lemons are less:",prod-reqprod)
+    elif reqprod>prod:
+        print("lemons are more:",reqprod-prod)
+    elif reqprod==prod:
+        print("lemons are sufficient")
+    else:
+        print("nothing")
+lemons()
+
+_________________________________________________
+
+#without arg and with return value
+def fact():
+    x=int(input())
+    for i in range(1,x+1):
+        if x%i==0:
+            print(i)
+    return i
+res=fact()
+
+____________________________________________________
+
+#multiplication of given number with arg and with return val
+def mul(n):
+    for i in range(1,11):
+        print(i,"x",n,"=",i*n)
+n=int(input())
+mul(n)
+
+_____________________________________________________
+
+#sum of digits of given num with arg and without return val
+def sum(num):
+    add=0
+    while num!=0:
+        a=num
+        num=num//10
+        a=a%10
+        add=add+a
+    return add
+num=int(input())
+res=sum(num)
+print(res)
+
+____________________________________________________
+
+#exapmple for recursion
+def display():
+    n=int(input())
+    if n==1:
+        display()
+    else:
+        print("over")
+display()
+
+______________________________________________
+
+#factorial for recursion
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+res=fact(5)
+print(res)
+
+________________________________________________
+
+
+
+#fibonocci series
+n=int(input())
+a=0
+b=0
+sum=0
+count=1
+while(count<=n):
+    print(sum,end=" ")
+    count=count+1
+    a=b
+    b=sum
+    sum=a+b
+
