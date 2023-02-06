@@ -1,0 +1,66 @@
+RANDOM MODULE:
+in this module the value will be taken randomly
+--sample():it gives any of the specifies random characters in the range
+--shuffle():it will shuffle values
+--choice():any random number
+--choices():vaariable k will be assigned to get req values
+here the existing values will get duplicated
+--randint():ranom integers in the given range will be given
+--unifrom():here the numbers can be int and float
+
+#gives all the functions in the specified modules
+z=dir(r)
+print(z)
+
+#IMPORT CALENDAR
+calendar(year): prints the year calendar
+calendar(year,month):print the specief month
+setfirstweekday(calendar.WEEKNAME):
+here the week name will be in caps
+
+
+
+______________________________________
+
+FUNCTIONS:
+1.pre-defined functions
+2.userdefined functions
+--for code reusability for fun
+lets say we want to use a particular concept multiple tyms in
+our program instead of writing the ame code manyh tyms
+we can write it once include that inside a function and can
+call the function wherever we need it
+
+types:
+1.functions withour argument and no retun value
+2.without arg and with return value
+3.with arg and with return val
+4.with arg and without return value
+
+sample program for 1type:
+def sample():  #fun definition or desription
+       print("happpy day")
+       print("today")
+sample()
+print("today")
+sample()
+
+
+_____________________________________
+
+RECURSION:
+a function which calls itself is called recursion
+also called recursive function
+
+
+#exapmple for recursion
+def display():
+    n=int(input())
+    if n==1:
+        display()
+    else:
+        print("over")
+display()
+
+
+
