@@ -1,0 +1,91 @@
+a=100
+b=0
+try:#u r telling this may have error,u try
+    print(a/b)
+    
+#except exception 3u saying if error there i handle
+#print ("Cant divide any number by zero")
+    
+except Exception as e:
+    print("please nonte,number cant be divivded by zero",e)
+    
+    #this will print error also
+#to check the program execution goes tilll the end
+print("bye")
+
+
+
+
+
+#program2
+
+a=100
+b=0
+try:
+    print(a/b)
+    
+except Exception as e:
+    print("please nonte,number cant be divivded by zero",e)
+finally:
+    print("Resource closed")
+
+
+
+#program3:
+
+try:
+    b=int(input("Enter the number"))
+    print("Resource open")
+    print(a/b)
+except ZeroDivisionError as e:
+    print("please note,number cant be divided by zero")
+except ValueError as e:
+    print("Invalid input",e)
+except Exception as e:
+    print("other error",e)
+finally:
+    print("Resource closed")
+
+
+
+#program4:
+x=10
+if x%2!=0:
+    raise Exception("x should be even number")
+else:
+    print(" x is even num...correct")
+
+
+
+
+
+class Employee:
+    def _init_(self,name,id):
+        self.id=id
+        self.name=name
+    def display(self):
+        #print("ID: %d \nName: %s" %(self.id,self.name))
+        print(self.id,self.name)
+emp1=Employee("john",101)
+emp2=Employee("David",102)
+emp1.display()
+emp2.display()
+
+
+
+#program2
+#variable and var. access in class and method
+class computer():
+    a=10
+    b=20
+    print("class variable inside class",a)
+    def config(self):
+        c=100
+        print("yes")
+        print("Instance access",self.b)
+lenova=computer()#object1
+print(lenova.a)
+print(lenova.a+lenova.b)
+dell=computer()#object2
+print("dell",dell.a)
+lenova.config()
